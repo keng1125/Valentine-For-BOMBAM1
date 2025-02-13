@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 50px;
+            color: red;
+            
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        h3{
+            margin-top: 50px;
+            font-size: 30;
+            color: black;
+        }
+        .d{
+            margin-top: 100px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        button {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            
+            font-size: 24px;
+            border: 1px solid white; /* ขอบปุ่ม */
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out; /* ทำให้เอฟเฟกต์ลื่นขึ้น */
+
+            /* ทำให้ดูนูน */
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        /* ตรงนี้เป็นส่วนสำคัญ: จัดรูปภาพ 3 รูป (ซ้าย กลาง ขวา) ด้วย Flexbox */
+    .image-row {
+      display: flex;
+      justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+      align-items: center;     /* จัดให้อยู่แนวเดียวกัน */
+      margin-top: 30px;       /* เว้นระยะด้านบนเล็กน้อย */
+    }
+
+    /* หากอยากเว้นระยะระหว่างรูปซ้ายและกลาง */
+    .left-image {
+      margin-right: 150px; /* ปรับตามต้องการ */
+    }
+    /* หากอยากเว้นระยะระหว่างรูปขวาและกลาง */
+    .right-image {
+      margin-left: 150px;  /* ปรับตามต้องการ */
+    }
+    </style>
+</head>
+<body>
+
+    <h1>นี่คือหมูคนสวยยย</h1>
+    <h3>♡ (>﹏<) ･ﾟ｡</h3>
+    
+<div class="image-row">
+    <img src="https://i.pinimg.com/originals/95/71/47/9571474b7604180b39d4da5bfc53412e.gif" alt="รูปซ้าย" width="300" class="left-image">
+    <iframe width="600" height="355" src="https://www.youtube.com/embed/43gdWR1hP9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="https://i.pinimg.com/originals/75/7c/45/757c45d7c7d26e4b4825483202ce941e.gif" alt="รูปขวา" width="300" class="right-image">
+
+</div>
+<div class="container">
+    <button class="btn1" onclick="goToindex()">ย้อนกลับ</button>
+    
+</div>
+<script>
+    function goToindex() {
+        window.location.href = "index.html";
+    }
+</script>
+    
+</body>
+</html>

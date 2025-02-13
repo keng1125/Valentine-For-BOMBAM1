@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Surprise</title>
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-top: 150px;
+        }
+        .container {
+            margin-top: 150px;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 50px;
+            color: black;
+            -webkit-text-stroke: 0.2px white;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+       
+        button {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            
+            font-size: 24px;
+            border: 1px solid white; /* ขอบปุ่ม */
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out; /* ทำให้เอฟเฟกต์ลื่นขึ้น */
+
+            /* ทำให้ดูนูน */
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .btn1, .btn2 {
+            background-color: red;
+            color: white;
+        }
+        button:active {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* ลดเงา */
+            transform: translateY(3px); /* ขยับลงเล็กน้อย */
+        }
+        .image-row {
+      display: flex;
+      justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+      align-items: center;     /* จัดให้อยู่แนวเดียวกัน */
+      margin-top: 30px;       /* เว้นระยะด้านบนเล็กน้อย */
+    }
+
+    /* หากอยากเว้นระยะระหว่างรูปซ้ายและกลาง */
+    .left-image {
+      margin-right: 150px; /* ปรับตามต้องการ */
+    }
+    /* หากอยากเว้นระยะระหว่างรูปขวาและกลาง */
+    .right-image {
+      margin-left: 150px;  /* ปรับตามต้องการ */
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Happy Valentine's Day!</h1>
+    
+    <div class="image-row">
+        <img src="https://i.pinimg.com/originals/be/c7/35/bec735b5d892d0ff3d810af31330a8ca.gif" alt="รูปซ้าย" width="300" class="left-image">
+        <img src="https://cdn.pixabay.com/animation/2025/01/08/23/27/23-27-02-953_512.gif" alt="คำอธิบายรูป" width="400">
+        <img src="https://i.pinimg.com/originals/3f/29/9f/3f299fa5b6a0cf243b496b72dd082c6e.gif" alt="รูปขวา" width="300" class="right-image">
+    </div>
+    
+    
+
+    <div class="container">
+        <button class="btn1" onclick="goToSurprise()">สิ่งที่เค้าอยากจะบอก♡</button>
+        <button class="btn2" onclick="goTobabe()">นี่คือไอ้ต้าวความรัก♡</button>
+
+    </div>
+
+    <script>
+        function goToSurprise() {
+            window.location.href = "surprise.html";
+        }
+
+        function goTobabe() {
+            window.location.href = "babe.html";
+        }
+    </script>
+
+</body>
+</html>
